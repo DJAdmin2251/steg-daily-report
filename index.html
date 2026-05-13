@@ -26,34 +26,6 @@
     gap: 10px;
   }
 
-  .logo {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    background: #111;
-    padding: 12px 22px 10px;
-    line-height: 1;
-    gap: 1px;
-  }
-
-  .logo-steg {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
-    font-size: 36px;
-    color: #d41f2b;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
-
-  .logo-plumbing {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    color: #fff;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-  }
-
   .page-subtitle {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 11px;
@@ -332,10 +304,7 @@
 <body>
 
 <div class="page-header">
-  <div class="logo">
-    <span class="logo-steg">Steg</span>
-    <span class="logo-plumbing">Plumbing</span>
-  </div>
+  <div class="logo-img"><img src="data:image/png;base64,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" alt="Steg Plumbing" style="height:70px; display:block;"></div>
   <span class="page-subtitle">Field Reporting System</span>
 </div>
 
